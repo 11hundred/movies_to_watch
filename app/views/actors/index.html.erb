@@ -1,0 +1,18 @@
+<h1>List of Actors (<%= @actors.count %>)</h1>
+
+<p><a href="http://localhost:3000/actors/new">Add A New Actor</a></p>
+
+<ul>
+  <% @actors.each do |actor| %>
+  <li>
+    <a href="http://localhost:3000/actors/<%= actor.id %>"><%= actor.name %></a>
+    (<%= actor.dob %>)
+    <a href="http://localhost:3000/delete_actor/<%= actor.id %>">Delete this actor</a>
+    <a href="http://localhost:3000/actors/<%= actor.id %>/edit">Edit this actor</a>
+  </li>
+  <% end %>
+</ul>
+
+<!-- Make each actor name a link to its show page -->
+
+<!-- Add a functional "Delete" link next to each actor -->

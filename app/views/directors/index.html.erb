@@ -1,0 +1,18 @@
+<h1>List of Directors (<%= @directors.count %>)</h1>
+
+<p><a href="http://localhost:3000/directors/new">Add A New Director</a></p>
+
+<ul>
+  <% @directors.each do |director| %>
+  <li>
+    <a href="http://localhost:3000/directors/<%= director.id %>"><%= director.name %></a>
+    (<%= director.dob %>)
+    <a href="http://localhost:3000/delete_director/<%= director.id %>">Delete this director</a>
+    <a href="http://localhost:3000/directors/<%= director.id %>/edit">Edit this director</a>
+  </li>
+  <% end %>
+</ul>
+
+<!-- Make each director title a link to its show page -->
+
+<!-- Add a functional "Delete" link next to each director -->

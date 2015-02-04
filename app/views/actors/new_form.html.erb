@@ -1,0 +1,30 @@
+<h1>Add A New Actor</h1>
+
+  <form action="http://localhost:3000/add_actor">
+    <div>
+      <label for="name">Name</label>
+      <input placeholder="Enter a name here:" name="name" type="text" id="name">
+    </div>
+
+    <div>
+      <label for="year">DOB</label>
+      <input name="dob" type="text" id="dob">
+    </div>
+
+
+    <div>
+      <label for="bio">BIO</label>
+      <textarea name="bio" id="bio">
+      </textarea>
+    </div>
+
+    <div>
+      <label for="picture">Image URL</label>
+      <input name="the_image_url" type="text" id="picture">
+    </div>
+
+    <div>
+      <input type="submit" value="Create Actor">
+    or <a href="/actors">Cancel</a>
+    </div>
+  </form>
